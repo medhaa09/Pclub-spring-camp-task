@@ -36,7 +36,7 @@ console.log(fetchData());// prints the fetched data on the terminal
 // Used await to wait for fetchData to complete before continuing
 /*(async () => {
     const fileContent = await fetchData();
-    const filePath = 'C:/Users/Lenovo/Desktop/web dev task/webdevtask/student_data.json';
+    const filePath = 'src/student_data.json';
 
     try {
         fs.writeFileSync(filePath, JSON.stringify(fileContent, null, 2));
