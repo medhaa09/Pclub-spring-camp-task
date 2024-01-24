@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const filePath = 'C:/Users/Lenovo/Desktop/web dev task/webdevtask/student_data.json';
+const filePath = 'backend task/student_data.json';
 const rawData = fs.readFileSync(filePath);
 const jsonData = JSON.parse(rawData);
 
@@ -16,7 +16,7 @@ fs.writeFileSync(filteredFilePath, JSON.stringify(filteredData, null, 2));*/
 
 
 
-const filePath2 = 'C:/Users/Lenovo/Desktop/web dev task/webdevtask/filtered_student_data.json';
+const filePath2 = 'backend task/filtered_student_data.json';
 const rawData2 = fs.readFileSync(filePath2);
 const jsonData2 = JSON.parse(rawData2);
 // Using map to add a new key-value pair to each object
@@ -35,7 +35,7 @@ const filteredDataByWing = jsonData2.map(obj => {
   });
   
 //saves the filtered data with wings of each student to a new JSON file
-const filteredbyWingFilePath = 'C:/Users/Lenovo/Desktop/web dev task/webdevtask/filteredbyWing_student_data.json';
+const filteredbyWingFilePath = 'backend task/filteredbyWing_student_data.json';
 fs.writeFileSync(filteredbyWingFilePath, JSON.stringify(filteredDataByWing, null, 2));
 
 console.log(`Filtered by wing data saved to "${filteredbyWingFilePath}".`);
