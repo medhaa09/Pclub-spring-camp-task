@@ -3,6 +3,8 @@
 
 This is a Student Search Web-App for students of IIT-Kanpur. We can search students based on various paramaters such as Batch, Gender, Hall, Programme, Department, Bllod-Group, Hometown and Name.
 
+## DEMO
+A demo of the working web-app can be viewed by visiting: https://main--sweet-meringue-af679a.netlify.app/
 
 ##  To Run Locally
 
