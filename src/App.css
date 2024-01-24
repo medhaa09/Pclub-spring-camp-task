@@ -1,0 +1,98 @@
+:root {
+  --background-color-light: rgb(255, 230, 230); /* Light background */
+  --background-color-dark: black;
+  --background-color-light-container: white;
+  --background-color-dark-container: #121212; /* Dark background */
+  --text-color-light: #000; /* Light mode text color */
+  --text-color-dark: #fff; /* Dark mode text color */
+}
+
+.App {
+  display: flex  ;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: var(--background-color-dark);
+  font-family: 'Arial', sans-serif;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  min-width: 100vw;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-height: 50vh;
+}
+
+.search-container {
+  display: flex  ;
+  flex-wrap: wrap  ;
+  justify-content:space-around  ;
+  width:57%;
+  min-height:100%;
+  background-color: var(  --background-color-dark-container); 
+  background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
+  padding: 2rem;
+  border-radius: 10px  ; 
+  gap:1rem;
+  margin-top:0.7rem;
+  box-shadow: 0px 7px 6px 2px rgba(155, 155, 155, 0.3), 0px 7px 6px 0px rgba(155, 155, 155, 0.3), 0px 7px 8px 0px rgba(155, 155, 155, 0.1) ;
+}
+
+ .text-input, .search-bar {
+  padding: 12px 15px ; 
+ background-color:#121212;
+  color: #dcdcdc ; /* Light grey text color for readability */
+  border: 1px solid #343434; /* Slight border for definition */
+  border-radius: 4px 4px 0 0 !; /* Slightly rounded corners for the inputs */
+  width: 100% ;
+  box-sizing: border-box ; /* Border box for proper sizing */
+}
+
+
+
+.search-bar {
+  flex-basis: 100% ; /* Allows the search bar to take the full width */
+  margin-top: 1rem ; /* Spacing above the search bar */
+  
+}
+.dropdown{
+  min-width:25% ;
+  max-width: 25%;
+  height:15%;
+  
+}
+
+.text-input{
+  width:25% ;
+  height:15% ;
+  border-radius: 4px ;
+  background-color:transparent ;
+  
+}
+.search-bar{
+  border-radius: 4px ;
+  background-color:transparent ;
+}
+
+.icon{
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px -1px, rgba(0, 0, 0, 0.14) 0px 6px 10px 0px, rgba(0, 0, 0, 0.12) 0px 1px 18px 0px;
+} 
+.buttons{
+  margin:1rem;
+}
+.helpicon{
+  position: absolute;
+  top :50%;
+  left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70rem;
+    height:21rem;
+    padding:1rem;
+    background-color:var(  --background-color-dark-container); 
+    color:var(--text-color-dark);
+    border-radius:5px;
+box-shadow: 2px 5px 2px 1px rgba(0,0,0,0.52), 2px 3px 3px 1px rgba(0,0,0,0.4), 2 3px 5px 1px rgba(0,0,0,0.35);
+    
+}
