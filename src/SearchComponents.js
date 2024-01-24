@@ -200,7 +200,7 @@ export default function MultipleSelect() {
   }
   try {
     // Fetches data from the search API
-    const response = await fetch('https://main--sweet-meringue-af679a.netlify.app/search', {
+    const response = await fetch('https://springcamp-backend1.onrender.com/search', {
       method: 'POST',    
       headers: {        
         'Content-Type': 'application/json'
